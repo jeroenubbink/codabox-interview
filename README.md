@@ -2,12 +2,12 @@
 
 Welcome to the codabox-interview
 
-## requirements
+## Requirements
 * docker
 * docker-compose
 * python (2.7) (for the commandline app)
 
-## running the app
+## Running the app
 
 Start the containers:
 
@@ -21,13 +21,20 @@ Login by going to http://localhost/admin and add a few greets
 
 see your greets: http://localhost/hello-world/ &lt;id&gt;
 
+## Commandline app
+
+in the scripts directory there's a commandline app that can be ran from the host:
+
+`cd scripts`
+
+`./get_hello.py` &lt;id&gt;
+
+
 ## Extra
 
 Expose ID's on admin page so you don't have to find them on the shell
 
-
-
-## caveats
+## Caveats
 
 I could not find a docker approach to get a hostname other than `localhost` for the hostname
 of the container. A simple solution could be to add the following line to your `/etc/hosts`:

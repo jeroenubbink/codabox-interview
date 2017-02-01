@@ -13,6 +13,10 @@ Start the containers:
 
 `docker-compose up`
 
+Run migrations:
+
+`docker-compose run web ./manage.py migrate`
+
 Create a superuser:
 
 `docker-compose run web ./manage.py createsuperuser`
